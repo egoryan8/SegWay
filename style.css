@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(./fonts/proximanova_regular.ttf) format("ttf"),
+    url(./fonts/ProximaNova-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(./fonts/ProximaNova-Bold.ttf) format("ttf"),
+    url(./fonts/ProximaNova-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+}
