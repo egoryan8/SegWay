@@ -13,7 +13,68 @@
 }
 
 .page {
-  max-width: 1280px;
   margin: 0 auto;
   font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  color: #323941;
 }
+
+.header__menu {
+  background-color: #323941;
+  color: white;
+  display: flex;
+  min-height: 48px;
+}
+
+.container {
+  max-width: 956px;
+  margin: 0 auto;
+}
+
+.header__menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 85px 0 0;
+}
+
+.header__nav-item {
+  margin-right: 24px;
+  transition: 0.7s;
+}
+
+.header__nav-item:last-of-type {
+  margin: 0;
+}
+
+.header__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: .3;
+  transform: scale(1.1);
+}
+
+.header__menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-pic {
+  margin-right: 24px;
+}
+
+.header__menu-num {
+  margin: 0;
+}
+
+.header__copyright {
+  min-height: 101px;
+}
+
