@@ -18,28 +18,31 @@
   color: #323941;
 }
 
+/*--------------------HEADER-MENU-----------------------------*/
+
 .header__menu {
   background-color: #323941;
   color: white;
-  display: flex;
-  min-height: 48px;
 }
 
 .container {
   max-width: 956px;
-  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header__menu-container {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  min-height: 48px;
+  justify-content: space-between;
 }
 
 .header__nav {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0 85px 0 0;
+  margin: 0;
 }
 
 .header__nav-item {
@@ -54,6 +57,10 @@
 .header__link {
   color: inherit;
   text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
 }
 
 .header__link:hover {
@@ -66,15 +73,81 @@
   align-items: center;
 }
 
-.header__menu-pic {
-  margin-right: 24px;
-}
-
 .header__menu-num {
   margin: 0;
 }
 
-.header__copyright {
-  min-height: 101px;
+@media screen and (max-width: 1279px) {
+  .header__link {
+    font-size: 16px;
+  }
 }
 
+@media screen and (max-width: 1023px) {
+  .header__link {
+    font-size: 14px;
+  }
+  .header__nav-item {
+    margin-right: 14px;
+  }
+}
+
+
+/*--------------------HEADER-COPYRIGHT-----------------------------*/
+
+.header__copyright {
+  min-height: 101px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 216px;
+  height: 63px;
+}
+
+.header__owner {
+  display: grid;
+  grid-template-columns: 63px 83px;
+  gap: 13px;
+  padding-right: 100px;
+}
+
+.header__owner-name {
+  margin: 8px 0 0 0;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 119.3%;
+  text-transform: uppercase;
+}
+
+.header__owner-text {
+  text-transform: lowercase;
+  color: #009EFF;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__owner {
+    padding-right: 90px;
+  }
+  .header__copyright {
+    min-height: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__owner {
+    padding-right: 50px;
+  }
+  .header__copyright {
+    min-height: 75px;
+  }
+}
